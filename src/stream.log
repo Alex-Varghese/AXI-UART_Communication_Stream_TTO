@@ -1,0 +1,290 @@
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 25 2017
+Start time: 15:13:50 on Oct 28,2025
+vlog -sv "+acc" "+cover" "+fcover" -l stream.log package.sv top.sv 
+** Note: (vlog-2286) package.sv(1): Using implicit +incdir+/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling package pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Error: (vlog-13004) test.sv(4.13): syntax error, unexpected type name. The type 'env' is defined at environment2.sv(1).
+-- Compiling module axis_master_inp
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(22)
+** at design/axis_master_inp.v(158): Illegal use of 'automatic' for variable declaration (clk).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(22)
+** at design/axis_master_inp.v(159): Illegal use of 'automatic' for variable declaration (rst).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(22)
+** at design/axis_master_inp.v(164): Illegal use of 'automatic' for variable declaration (load_data).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(22)
+** at design/axis_master_inp.v(166): Illegal use of 'automatic' for variable declaration (m_axis_ready).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(22)
+** at design/axis_master_inp.v(167): Illegal use of 'automatic' for variable declaration (m_axis_valid).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(22)
+** at design/axis_master_inp.v(169): Illegal use of 'automatic' for variable declaration (m_axis_valid_out).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(22)
+** at design/axis_master_inp.v(171): Illegal use of 'automatic' for variable declaration (m_axis_data).
+-- Compiling module uart_tx
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(22)
+** at design/uart_tx.v(30): Illegal use of 'automatic' for variable declaration (clk).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(22)
+** at design/uart_tx.v(30): Illegal use of 'automatic' for variable declaration (rst).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(22)
+** at design/uart_tx.v(31): Illegal use of 'automatic' for variable declaration (tx_data).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(22)
+** at design/uart_tx.v(32): Illegal use of 'automatic' for variable declaration (tx_data_valid).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(22)
+** at design/uart_tx.v(32): Illegal use of 'automatic' for variable declaration (tx_data_last).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(22)
+** at design/uart_tx.v(33): Illegal use of 'automatic' for variable declaration (tx_data_ready).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(22)
+** at design/uart_tx.v(35): Illegal use of 'automatic' for variable declaration (Uart_tx).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(22)
+** at design/uart_tx.v(46): Illegal use of 'automatic' for variable declaration (current_state).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(22)
+** at design/uart_tx.v(46): Illegal use of 'automatic' for variable declaration (next_state).
+-- Compiling module sync_fifo
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(25): Illegal use of 'automatic' for variable declaration (clk).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(25): Illegal use of 'automatic' for variable declaration (rst).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(26): Illegal use of 'automatic' for variable declaration (wr_en).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(26): Illegal use of 'automatic' for variable declaration (din_last).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(27): Illegal use of 'automatic' for variable declaration (din).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(28): Illegal use of 'automatic' for variable declaration (full).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(29): Illegal use of 'automatic' for variable declaration (rd_en).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(30): Illegal use of 'automatic' for variable declaration (dout_last).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(31): Illegal use of 'automatic' for variable declaration (empty).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(33): Illegal use of 'automatic' for variable declaration (dout).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** while parsing file included at design/axis_fifo_uart_tx.v(23)
+** at design/sync_fifo.v(37): Illegal use of 'automatic' for variable declaration (mem_data).
+-- Compiling module axis_fifo_uart_tx
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(27): Illegal use of 'automatic' for variable declaration (clk).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(27): Illegal use of 'automatic' for variable declaration (rst).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(28): Illegal use of 'automatic' for variable declaration (s_axis_data).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(29): Illegal use of 'automatic' for variable declaration (s_axis_valid).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(30): Illegal use of 'automatic' for variable declaration (s_axis_last).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(31): Illegal use of 'automatic' for variable declaration (s_axis_ready).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(33): Illegal use of 'automatic' for variable declaration (uart_tx).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(35): Illegal use of 'automatic' for variable declaration (fifo_out).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(36): Illegal use of 'automatic' for variable declaration (fifo_out_last).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(37): Illegal use of 'automatic' for variable declaration (fifo_full).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(37): Illegal use of 'automatic' for variable declaration (fifo_empty).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(38): Illegal use of 'automatic' for variable declaration (fifo_wr_en).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(38): Illegal use of 'automatic' for variable declaration (fifo_rd_en).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(43): Illegal use of 'automatic' for variable declaration (uart_valid).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(23)
+** at design/axis_fifo_uart_tx.v(44): Illegal use of 'automatic' for variable declaration (uart_ready).
+-- Compiling module uart_rec
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(24)
+** at design/uart_rec.v(29): Illegal use of 'automatic' for variable declaration (clk).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(24)
+** at design/uart_rec.v(30): Illegal use of 'automatic' for variable declaration (rst).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(24)
+** at design/uart_rec.v(31): Illegal use of 'automatic' for variable declaration (rx).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(24)
+** at design/uart_rec.v(32): Illegal use of 'automatic' for variable declaration (rx_data).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(24)
+** at design/uart_rec.v(35): Illegal use of 'automatic' for variable declaration (rx_valid).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(24)
+** at design/uart_rec.v(47): Illegal use of 'automatic' for variable declaration (state).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** while parsing file included at design/top_axis_uart.v(24)
+** at design/uart_rec.v(47): Illegal use of 'automatic' for variable declaration (next_state).
+-- Compiling module top_axis_uart
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(26): Illegal use of 'automatic' for variable declaration (clk).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(26): Illegal use of 'automatic' for variable declaration (rst).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(26): Illegal use of 'automatic' for variable declaration (axis_data).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(27): Illegal use of 'automatic' for variable declaration (axis_valid).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(28): Illegal use of 'automatic' for variable declaration (axis_last).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(28): Illegal use of 'automatic' for variable declaration (uart_tx).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(28): Illegal use of 'automatic' for variable declaration (rx_valid).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(28): Illegal use of 'automatic' for variable declaration (m_axis_ready).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(28): Illegal use of 'automatic' for variable declaration (rx_data).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(30): Illegal use of 'automatic' for variable declaration (m_axis_data).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(31): Illegal use of 'automatic' for variable declaration (axis_ready).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(5)
+** at design/top_axis_uart.v(33): Illegal use of 'automatic' for variable declaration (m_axis_valid_out).
+-- Compiling interface intf
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(6)
+** at interface.sv(1): Illegal use of 'automatic' for variable declaration (clk).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(6)
+** at interface.sv(1): Illegal use of 'automatic' for variable declaration (rst).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(6)
+** at interface.sv(4): Illegal use of 'automatic' for variable declaration (axis_data).
+** Error: ** while parsing file included at package.sv(19)
+** while parsing file included at top.sv(6)
+** at interface.sv(4): Illegal use of 'automatic' for variable declaration (rx_data).
+** Error (suppressible): ** while parsing file included at package.sv(19)
+** at top.sv(8): (vlog-2744) An import statement is illegal when directly within a class scope.
+** Error (suppressible): ** while parsing file included at package.sv(19)
+** at top.sv(9): (vlog-2744) An import statement is illegal when directly within a class scope.
+-- Compiling module top
+** Error: ** while parsing file included at package.sv(19)
+** at top.sv(14): Illegal use of 'automatic' for variable declaration (clk).
+** Error: ** while parsing file included at package.sv(19)
+** at top.sv(14): Illegal use of 'automatic' for variable declaration (rst).
+** Error: (vlog-13069) package.sv(21): near "endpackage": syntax error, unexpected "SystemVerilog keyword 'endpackage'", expecting class.
+End time: 15:13:51 on Oct 28,2025, Elapsed time: 0:00:01
+Errors: 71, Warnings: 0
