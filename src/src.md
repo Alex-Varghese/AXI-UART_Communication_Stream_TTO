@@ -1,5 +1,5 @@
 # PATHS  
-src/
+src/  
 ├── top.log                 # Compilation log  
 ├── simulation.log          # Simulation log  
 ├── transcript              # Full simulation transcript  
