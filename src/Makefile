@@ -11,7 +11,7 @@ source_questa:
 
 # Coverage target 1: Basic coverage
 coverage: source_questa
-	vlog -sv +acc +cover +fcover -l top.log top.sv
+	vlog -sv +acc +cover +fcover -l top.log package.sv top.sv
 	vsim -vopt work.top -voptargs=+acc=npr -assertdebug -l simulation.log -coverage -c -do "coverage save -onexit -assert -directive -cvg -codeAll coverage.ucdb; run -all; exit"
 	vcover report -html coverage.ucdb -htmldir covReport -details
 	vim transcript
@@ -19,7 +19,7 @@ coverage: source_questa
 # Coverage target 2: With exclusion file
 coverage_with_exclusion: source_questa
 	vlog -sv +acc +cover +fcover -l evm.log top.sv
-	vsim -vopt work.top -voptargs=+acc=npr -assertdebug -l simulation.log -coverage -c -do "do exclusion.do; coverage save -onexit -assert -directive -cvg -codeAll coverage.ucdb; run -all; exit"
+	vsim -vopt work.top -voptargs=+acc=npr -assertdebug -l simulation.log -coverage -c -do "do ../coverage/exclusion.do; coverage save -onexit -assert -directive -cvg -codeAll coverage.ucdb; run -all; exit"
 	vcover report -html coverage.ucdb -htmldir covReport -details
 	vim transcript
 
